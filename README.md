@@ -59,9 +59,9 @@ cd spring-backend
 
 ### Open application.properties and configure your database:
 
--spring.datasource.url=jdbc:mysql://localhost:3306/wallet_db
--spring.datasource.username=your_username
--spring.datasource.password=your_password
+- spring.datasource.url=jdbc:mysql://localhost:3306/wallet_db
+- spring.datasource.username=your_username
+- spring.datasource.password=your_password
 
 ### Install dependencies and run:
 
@@ -69,20 +69,20 @@ mvn clean install
 mvn spring-boot:run
 
 ### 💻 Frontend (React)
--cd react-frontend
-  -Install dependencies:
-    -npm install
-    -npm run dev
+- cd react-frontend
+  - Install dependencies:
+    - npm install
+    - npm run dev
 
 ### 📂 Folder Structure
--/project-root
+- /project-root
   ├── react-frontend/           # React Frontend Code
   ├── spring-backend/           # Spring Boot Backend Code
   ├── testing-documents/        # Excel and Manual Testing Docs
   └── README.md
 
 ### 🧪 Testing
--Testing documents are available in the /testing-documents/ folder, including:
+- Testing documents are available in the /testing-documents/ folder, including:
 
 ✔️ Pre-requisites
 
@@ -96,11 +96,7 @@ mvn spring-boot:run
 
 
 🧑‍💻 Developed by
-
 Prasann Malanaik
-
 Sankeshwar, Belagavi, Karnataka, India
-
 📧 prasannmalanaik@gmail.com
-
 📱 +91 8861116581
