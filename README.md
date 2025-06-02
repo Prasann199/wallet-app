@@ -7,13 +7,8 @@ A full-stack Wallet Management Web Application that allows users to manage trans
 ## 🚀 Features
 
 - 🔐 User Registration & Login (Session-based)
-- ➕ Add Income and Expense Transactions
+- ➕ Add Money and remove money
 - 📜 View Transaction History
-- 🗂️ Filter Transactions by Date and Type
-- 📊 Transaction Summary and Dashboard (coming soon)
-- ❌ Remove invalid or incomplete transactions
-- ✅ Admin-only song access logic (custom implementation)
-- 📁 Separate user-specific playlist and data management (custom logic)
 
 ---
 
@@ -21,9 +16,8 @@ A full-stack Wallet Management Web Application that allows users to manage trans
 
 **Frontend:**
 - React.js
-- HTML5, CSS3, JavaScript
+- tailwind css(Library)
 - Axios
-- GSAP (Optional for Animations)
 
 **Backend:**
 - Spring Boot
@@ -54,49 +48,82 @@ A full-stack Wallet Management Web Application that allows users to manage trans
 
 ### 🔧 Backend (Spring Boot)
 
+
+### ✏️ Configure `application.properties`
+
+Update your database credentials:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/wallet_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
+
+### 📦 Install & Run
+
 ```bash
-cd spring-backend
-
-## Open application.properties and configure your database:
-
-- spring.datasource.url=jdbc:mysql://localhost:3306/wallet_db
-- spring.datasource.username=your_username
-- spring.datasource.password=your_password
-
-## Install dependencies and run:
-
 mvn clean install
 mvn spring-boot:run
+```
 
-## 💻 Frontend (React)
-- cd react-frontend
-  - Install dependencies:
-    - npm install
-    - npm run dev
+---
 
-## 📂 Folder Structure
-- /project-root
-  ├── react-frontend/           # React Frontend Code
-  ├── spring-backend/           # Spring Boot Backend Code
-  ├── testing-documents/        # Excel and Manual Testing Docs
-  └── README.md
+## 💻 Frontend Setup (React)
 
-## 🧪 Testing
-- Testing documents are available in the /testing-documents/ folder, including:
+### 🛠 Requirements
 
-✔️ Pre-requisites
+- Node.js & npm
 
-✔️ Test Scenarios & Cases
+### 📁 Navigate to Frontend
 
-✔️ Expected vs Actual Result
+```bash
+cd react-frontend
+```
 
-✔️ Status (Pass/Fail)
+### 📦 Install Dependencies
 
-📸 Images can be added for verification
+```bash
+npm install
+```
 
+### ▶️ Run the Development Server
 
-🧑‍💻 Developed by
-Prasann Malanaik
-Sankeshwar, Belagavi, Karnataka, India
-📧 prasannmalanaik@gmail.com
-📱 +91 8861116581
+```bash
+npm run dev
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+/project-root
+├── frontend -> wallet/         # React Frontend Code
+├── debit-credit-wallet/         # Spring Boot Backend Code
+├── testing-documents/      # Excel and Manual Testing Docs
+└── README.md               # Project Overview and Setup
+```
+
+---
+
+## 🧪 Testing Documentation
+
+Manual testing documentation is available in the `/testing-documents/` folder, containing:
+
+- ✅ Pre-requisites  
+- 🧪 Test Scenarios & Test Cases  
+- 📌 Steps to Reproduce  
+- 🎯 Expected vs Actual Results  
+- 📊 Status (Pass/Fail)  
+- 📸 Screenshot placeholders for proof
+
+---
+
+## 👨‍💻 Developed By
+
+**Prasann Malanaik**  
+📍 Sankeshwar, Belagavi, Karnataka, India  
+📧 prasannmalanaik@gmail.com  
+📱 +91 8861116581  
+
+---
