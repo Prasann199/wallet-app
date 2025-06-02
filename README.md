@@ -57,31 +57,31 @@ A full-stack Wallet Management Web Application that allows users to manage trans
 ```bash
 cd spring-backend
 
-### Open application.properties and configure your database:
+## Open application.properties and configure your database:
 
 - spring.datasource.url=jdbc:mysql://localhost:3306/wallet_db
 - spring.datasource.username=your_username
 - spring.datasource.password=your_password
 
-### Install dependencies and run:
+## Install dependencies and run:
 
 mvn clean install
 mvn spring-boot:run
 
-### 💻 Frontend (React)
+## 💻 Frontend (React)
 - cd react-frontend
   - Install dependencies:
     - npm install
     - npm run dev
 
-### 📂 Folder Structure
+## 📂 Folder Structure
 - /project-root
   ├── react-frontend/           # React Frontend Code
   ├── spring-backend/           # Spring Boot Backend Code
   ├── testing-documents/        # Excel and Manual Testing Docs
   └── README.md
 
-### 🧪 Testing
+## 🧪 Testing
 - Testing documents are available in the /testing-documents/ folder, including:
 
 ✔️ Pre-requisites
